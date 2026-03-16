@@ -1,0 +1,52 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  // "cursor_blink":true,
+  "restore_on_startup": "launchpad",
+  "disable_ai": true,
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "vim_mode": true,
+  "terminal": {
+    "font_size": 16.0,
+    "font_family": "Iosevka Nerd Font Mono",
+    "max_scroll_history_lines": 5000,
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "base_keymap": "VSCode",
+  "agent": {
+    "enabled": false,
+    "button": false,
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "tab_bar": {
+    "show": false,
+  },
+  "minimap": {
+    "show": "never",
+  },
+  "cursor_blink": true,
+  "autosave": "on_window_change",
+  "buffer_font_fallbacks": ["Fira Code", "Courier New", "monospace"],
+  "buffer_font_family": "Jetbrains Mono",
+  "linked_edits": true,
+  "icon_theme": "Catppuccin Macchiato",
+  "ui_font_size": 16,
+  "buffer_font_size": 16.0,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Vercel Dark",
+  },
+}

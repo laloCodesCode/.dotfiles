@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "coc-clangd": ">=0.32.0",
+    "coc-python": ">=1.2.13",
+    "coc-tsserver": ">=2.3.1",
+    "coc-html": ">=1.8.0",
+    "coc-json": ">=1.9.3",
+    "coc-markdownlint": ">=1.36.0",
+    "coc-phpls": ">=2.2.4",
+    "coc-pyright": ">=1.1.407",
+    "coc-snippets": ">=3.4.7",
+    "coc-r-lsp": ">=1.2.1"
+  }
+}
