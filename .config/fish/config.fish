@@ -1,5 +1,5 @@
 if status is-interactive
-# Commands to run in interactive sessions can go here
+    # Commands to run in interactive sessions can go here
 end
 
 # Stuff I like
@@ -9,9 +9,7 @@ set -U fish_color_error red
 set -U fish_color_param yellow
 set -U fish_color_comment brblack
 
-
-nerdfetch 
-
+nerdfetch
 
 # Short hand 
 alias g='git'
@@ -22,6 +20,12 @@ alias bye='exit'
 alias v='vim'
 alias nv='nvim'
 
+#Tmux Workflow
+alias IDE tmux
+alias ide-attach "tmux attach -t" # ide-attach 
+alias ide-kill "tmux kill-session -t" # ide-kill 
+alias ide-ls "tmux ls" # list all ide sessions
+alias ide-stop "tmux kill-server"
 
 # Prefered prompt
 starship init fish | source

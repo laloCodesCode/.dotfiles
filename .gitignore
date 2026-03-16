@@ -2,3 +2,5 @@
 .vim/plugged/
 # copilot token
 .config/github-copilot/
+# don't track tmux plugins
+.config/tmux/plugins/"
