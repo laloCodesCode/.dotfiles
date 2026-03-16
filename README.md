@@ -26,7 +26,7 @@ stow .
 
 ### IMPORTANT
 
-- For the vim plugin to install you must run the following:
+- For the vim plugins to install you must run the following:
 
   ```
   :PlugInstal
