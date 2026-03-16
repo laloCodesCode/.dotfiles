@@ -1,1 +1,4 @@
+# don't track
 .vim/plugged/
+# copilot token
+.config/github-copilot/
