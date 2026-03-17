@@ -20,12 +20,13 @@ alias bye='exit'
 alias v='vim'
 alias nv='nvim'
 
-#Tmux Workflow
-alias IDE tmux
-alias ide-attach "tmux attach -t" # ide-attach 
-alias ide-kill "tmux kill-session -t" # ide-kill 
-alias ide-ls "tmux ls" # list all ide sessions
-alias ide-stop "tmux kill-server"
+#uninstalled tmux because it was slow might re-download later on
+##Tmux Workflow
+#alias IDE tmux
+#alias ide-attach "tmux attach -t" # ide-attach 
+#alias ide-kill "tmux kill-session -t" # ide-kill 
+#alias ide-ls "tmux ls" # list all ide sessions
+#alias ide-stop "tmux kill-server"
 
 # Prefered prompt
 starship init fish | source
