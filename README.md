@@ -8,7 +8,7 @@
 
 ## How to use on your machine?
 
-> You should already have Brew as a package manger install GNU stow
+> You should already have Brew as a package manger, install GNU stow
 
 ```
 brew install stow
@@ -20,12 +20,6 @@ brew install stow
 git clone git@github.com:laloCodesCode/.dotfiles.git ~/dotfiles
 ```
 
-> Remove the broken itern2 symlink if present
-
-```
-rm -f ~/dotfiles/.config/iterm2/AppSupport
-```
-
 > Move into the dots
 
 ```
@@ -35,7 +29,7 @@ cd ~/dotfiles
 > Adopt my dots and restore !
 
 ```
-stow --adpot --dir="$HOME/dotfiles" --target="$HOME" .
+stow --adopt --dir="$HOME/dotfiles" --target="$HOME" .
 
 git -C ~/dotfiles checkout .
 ```
