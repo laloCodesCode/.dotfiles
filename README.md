@@ -8,20 +8,36 @@
 
 ## How to use on your machine?
 
+> You should already have Brew as a package manger install GNU stow
+
 ```
 brew install stow
 ```
 
-```
-git clone git@github.com:laloCodesCode/.dotfiles.git dotfiles
-```
+> Clone the repo
 
 ```
-cd dotfiles
+git clone git@github.com:laloCodesCode/.dotfiles.git ~/dotfiles
 ```
 
+> Remove the broken itern2 symlink if present
+
 ```
-stow .
+rm -f ~/dotfiles/.config/iterm2/AppSupport
+```
+
+> Move into the dots
+
+```
+cd ~/dotfiles
+```
+
+> Adopt my dots and restore !
+
+```
+stow --adpot --dir="$HOME/dotfiles" --target="$HOME" .
+
+git -C ~/dotfiles checkout .
 ```
 
 ### IMPORTANT
