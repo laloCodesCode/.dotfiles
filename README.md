@@ -45,7 +45,7 @@ git -C ~/dotfiles checkout .
 - For the vim plugins to install you must run the following:
 
   ```
-  :PlugInstal
+  :PlugInstall
   ```
 
 - DO NOT SUBMIT PULL REQUEST THIS IS MY PERSONAL CONFIG. FORK IT AND FIX STUFF ON YOUR LOCAL MACHINE!
