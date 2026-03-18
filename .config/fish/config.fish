@@ -22,7 +22,10 @@ alias nv='nvim'
 
 #uninstalled tmux because it was slow might re-download later on
 ##Tmux Workflow
-#alias IDE tmux
+alias IDE tmux
+alias IDE-n "tmux new -s"
+alias IDE-ll "tmux ls"
+alias IDE-x "tmux kill-server"
 #alias ide-attach "tmux attach -t" # ide-attach 
 #alias ide-kill "tmux kill-session -t" # ide-kill 
 #alias ide-ls "tmux ls" # list all ide sessions
