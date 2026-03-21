@@ -54,8 +54,8 @@
 #
 #
 # background
-background-opacity = 0.90
-background-blur-radius = 30
+# background-opacity = 0.90
+# background-blur-radius = 30
 # Font
 font-family = "JetBrains Mono Nerd Font"
 font-size = 14.0
@@ -67,9 +67,9 @@ term = xterm-256color
 #Tabs
 macos-titlebar-style = transparent
 macos-titlebar-style = hidden
-window-padding-x = 12
-window-padding-y = 8
-window-padding-balance = true
+# window-padding-x = 12
+# window-padding-y = 8
+# window-padding-balance = true
 
 
 
