@@ -34,3 +34,4 @@ alias IDE-x "tmux kill-server"
 # Prefered prompt
 starship init fish | source
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.config/emacs/bin:$PATH"
