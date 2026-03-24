@@ -34,6 +34,13 @@
 ;; `load-theme' function. This is the default:
 (setq doom-theme 'doom-one)
 
+
+;; I need a bigger font because I have bad eyesight
+(setq doom-font(font-spec :family "JetBrains Mono" :szie 20))
+
+;; Need italic comments because my eyesight is still bad
+(custom-set-faces!
+  '(font-lock-comment-face :slant italic))
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)

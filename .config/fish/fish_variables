@@ -10,3 +10,4 @@ SETUVAR fish_color_comment:brblack
 SETUVAR fish_color_error:red
 SETUVAR fish_color_param:yellow
 SETUVAR fish_greeting:
+SETUVAR fish_user_paths:/Users/e\x2dherrerabarraza/\x2eghcup/bin
