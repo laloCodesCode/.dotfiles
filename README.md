@@ -54,6 +54,14 @@ brew tap d12frosted/emacs-plus
 brew install --cask emacs-plus-app
 ```
 
+- Doom Has a core requirnment please install ripgrep and fd via 
+
+``` shell
+brew install ripgrep fd
+```
+
+
+
 - Install the doom files 
 
 ``` shell
