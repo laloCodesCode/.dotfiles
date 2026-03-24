@@ -34,7 +34,7 @@ stow --adopt --dir="$HOME/dotfiles" --target="$HOME" .
 git -C ~/dotfiles checkout .
 ```
 
-### IMPORTANT
+### VIM
 
 - For the vim plugins to install you must run the following:
 
@@ -43,3 +43,27 @@ git -C ~/dotfiles checkout .
   ```
 
 - DO NOT SUBMIT PULL REQUEST THIS IS MY PERSONAL CONFIG. FORK IT AND FIX STUFF ON YOUR LOCAL MACHINE!
+
+
+## EMACS
+
+- Install emacs via:
+
+``` shell
+brew tap d12frosted/emacs-plus
+brew install --cask emacs-plus-app
+```
+
+- Install the doom files 
+
+``` shell
+git clone https://github.com/doomemacs/doomemacs ~/.config/emacs
+~/.config/emacs/bin/doom install
+```
+
+- Move into the dots and sync using the doom command line
+``` shell
+stow .
+doom sync
+```
+
