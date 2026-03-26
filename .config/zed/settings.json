@@ -47,6 +47,6 @@
   "theme": {
     "mode": "dark",
     "light": "One Light",
-    "dark": "Vercel Dark",
+    "dark": "Catppuccin Macchiato",
   },
 }
