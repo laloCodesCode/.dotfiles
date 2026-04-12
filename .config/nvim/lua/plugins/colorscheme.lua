@@ -1,20 +1,15 @@
 return {
   -- moonfly
-  -- {
-  --   "bluz71/vim-moonfly-colors",
-  --   name = "moonfly",
-  --   lazy = false,
-  --   priority = 1000,
-  --   config = function()
-  --     vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-  --     vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-  --     vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
-  --     vim.api.nvim_set_hl(0, "SignColumn", { bg = "none" })
-  --     vim.api.nvim_set_hl(0, "LineNr", { bg = "none" })
-  --   end,
-  -- },
-  --
-  --
+  {
+    "bluz71/vim-moonfly-colors",
+    name = "moonfly",
+    lazy = false,
+    priority = 1000,
+    config = function() end,
+  },
+
+  -- Rosepine
+  { "rose-pine/neovim", name = "rose-pine", config = function() end },
   -- catppuccin
   {
     "catppuccin/nvim",
@@ -78,9 +73,7 @@ return {
     "tiagovla/tokyodark.nvim",
     lazy = false,
     priority = 1000,
-    opts = {
-      transparent_background = true,
-    },
+    opts = { transparent_background = true },
   },
   -- tokyonight
   {
@@ -128,7 +121,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight",
+      colorscheme = "moonfly",
     },
   },
 }
