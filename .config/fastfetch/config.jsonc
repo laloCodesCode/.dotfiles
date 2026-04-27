@@ -1,11 +1,11 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
 
-  "logo": {
-    "type": "file",
-    "source": "/Users/e-herrerabarraza/ascii-art/one_art.txt"
-    
-  },
+  // "logo": {
+  //   "type": "file",
+  //   "source": "/Users/e-herrerabarraza/ascii-art/one_art.txt"
+  //
+  // },
 
   "modules": [
     "logo",
@@ -15,11 +15,10 @@
     "packages",
     "cpu",
     "gpu",
+    "cpuusage",
     "memory",
     "swap",
     "disk",
-    "colors"
-  ]
+    "colors",
+  ],
 }
-
-

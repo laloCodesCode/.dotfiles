@@ -36,7 +36,7 @@
 
 
 ;; I need a bigger font because I have bad eyesight
-(setq doom-font(font-spec :family "JetBrains Mono" :szie 20))
+(setq doom-font(font-spec :family "JetBrains Mono" :size 16))
 
 ;; Need italic comments because my eyesight is still bad
 (custom-set-faces!
@@ -83,3 +83,14 @@
 (setq shell-file-name (executable-find "bash"))
 (setq-default vterm-shell "/opt/homebrew/bin/fish"
               explicit-shell-name "/opt/homebrew/bin/fish")
+;; in config.el
+(use-package! typst-ts-mode
+  :defer t
+  :config
+  (after! lsp-mode
+    (add-to-list 'lsp-language-id-configuration '(typst-ts-mode . "typst"))
+    (lsp-register-client
+     (make-lsp-client :new-connection (lsp-stdio-connection "tinymist")
+                      :activation-fn (lsp-activate-on "typst")
+                      :server-id 'tinymist)))
+  :hook (typst-ts-mode . lsp-deferred))

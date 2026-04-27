@@ -9,7 +9,8 @@ set -U fish_color_error red
 set -U fish_color_param yellow
 set -U fish_color_comment brblack
 
-nerdfetch
+# nerdfetch
+fastfetch
 
 # Short hand 
 alias g='git'
@@ -20,20 +21,11 @@ alias bye='exit'
 alias v='vim'
 alias nv='nvim'
 
-#uninstalled tmux because it was slow might re-download later on
-##Tmux Workflow
-alias IDE tmux
-alias IDE-n "tmux new -s"
-alias IDE-ll "tmux ls"
-alias IDE-x "tmux kill-server"
-#alias ide-attach "tmux attach -t" # ide-attach 
-#alias ide-kill "tmux kill-session -t" # ide-kill 
-#alias ide-ls "tmux ls" # list all ide sessions
-#alias ide-stop "tmux kill-server"
-
 # Prefered prompt
 starship init fish | source
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.config/emacs/bin:$PATH"
 
-set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin $PATH /Users/e-herrerabarraza/.ghcup/bin # ghcup-env
+set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME
+set -gx PATH $HOME/.cabal/bin $PATH /Users/e-herrerabarraza/.ghcup/bin # ghcup-env
+
