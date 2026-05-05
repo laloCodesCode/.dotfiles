@@ -20,6 +20,7 @@ alias xxx='clear'
 alias bye='exit'
 alias v='vim'
 alias nv='nvim'
+alias ff='fastfetch'
 
 # Prefered prompt
 starship init fish | source
@@ -28,4 +29,3 @@ export PATH="$HOME/.config/emacs/bin:$PATH"
 
 set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME
 set -gx PATH $HOME/.cabal/bin $PATH /Users/e-herrerabarraza/.ghcup/bin # ghcup-env
-

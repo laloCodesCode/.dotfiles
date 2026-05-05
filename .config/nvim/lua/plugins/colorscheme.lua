@@ -68,6 +68,12 @@ return {
       transparent = true,
     },
   },
+  {
+    "vague-theme/vague.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
   -- tokyodark
   {
     "tiagovla/tokyodark.nvim",
@@ -121,7 +127,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "nord",
+      colorscheme = "vague",
     },
   },
 }
