@@ -8,6 +8,18 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   // "cursor_blink":true,
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "git_panel": {
+    "dock": "left",
+  },
   "restore_on_startup": "launchpad",
   "disable_ai": true,
   "session": {
@@ -25,8 +37,9 @@
   },
   "base_keymap": "VSCode",
   "agent": {
-    "enabled": false,
-    "button": false,
+    "dock": "right",
+    "enabled": true,
+    "button": true,
     "favorite_models": [],
     "model_parameters": [],
   },
@@ -42,12 +55,12 @@
   "buffer_font_family": "Jetbrains Mono",
   "linked_edits": true,
   "icon_theme": {
-    "mode": "light",
+    "mode": "dark",
     "light": "Catppuccin Macchiato",
-    "dark": "Catppuccin Macchiato"
+    "dark": "Catppuccin Macchiato",
   },
-  "ui_font_size": 16,
-  "buffer_font_size": 16.0,
+  "ui_font_size": 20,
+  "buffer_font_size": 20.0,
   "theme": {
     "mode": "dark",
     "light": "One Light",
