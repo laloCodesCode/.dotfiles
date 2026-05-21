@@ -19,7 +19,7 @@ config.colors = {
 }
 
 config.font = wezterm.font("JetBrains Mono")
-config.font_size = 14.5
+config.font_size = 20.00
 
 config.enable_tab_bar = false
 
