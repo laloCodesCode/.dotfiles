@@ -1,0 +1,18 @@
+
+# add more as I need them
+
+
+
+
+# python because i'm a chud
+[[language]]
+name = "python"
+language-servers = [ "pyright" ]
+
+# toml
+[[language]]
+name = "toml"
+# https://github.com/tamasfe/taplo/issues/580#issuecomment-2004174721
+roots = ["."]
+language-servers = ["taplo"]
+
