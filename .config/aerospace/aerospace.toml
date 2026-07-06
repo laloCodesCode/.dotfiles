@@ -87,12 +87,13 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
     alt-r = 'mode resize'
 
 
-    # Rsize that makes sense to me 
-    alt-minus = 'resize smart -50'
-    alt-equal = 'resize smart +50'
 
 
 
 [mode.resize.binding]
+    # Rsize that makes sense to me 
+    alt-minus = 'resize smart -50'
+    alt-equal = 'resize smart +50'
+
     enter = 'mode main'
     esc = 'mode main'
