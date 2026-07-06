@@ -33,3 +33,13 @@ language-servers = ["rust-analyzer"]
 [[language]]
 name = "go"
 language-servers = ["gopls"]
+
+# C
+[[language]]
+name = "c"
+language-servers = ["clangd"]
+
+# C++
+[[langauge]]
+name = "cpp"
+language-servers = ["clangd"]
