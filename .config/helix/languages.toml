@@ -1,9 +1,4 @@
 
-# add more as I need them
-
-
-
-
 # python because i'm a chud
 [[language]]
 name = "python"
@@ -16,3 +11,25 @@ name = "toml"
 roots = ["."]
 language-servers = ["taplo"]
 
+# VIVA O BRASIL POXA (Lua)
+[[language]]
+name = "lua"
+language-servers = ["lua-language-server"]
+
+# TypeScript and JavaScript
+[[language]]
+name = "javascript"
+language-servers = ["typescript-language-server"]
+[[language]]
+name = "typescript"
+language-servers = ["typescript-language-server"]
+
+# Rust
+[[language]]
+name = "rust"
+language-servers = ["rust-analyzer"]
+
+# GoLang
+[[language]]
+name = "go"
+language-servers = ["gopls"]
