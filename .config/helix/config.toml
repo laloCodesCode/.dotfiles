@@ -3,9 +3,11 @@ theme = "rose_pine"
 
 [editor]
 auto-save = true
+auto-completion = true
 line-number = "relative"
 mouse = true
 true-color = true
+bufferline = "always"
 
 [editor.cursor-shape]
 insert = "bar"
