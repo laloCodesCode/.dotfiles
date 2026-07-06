@@ -10,3 +10,8 @@
 .config/emacs/
 # pesky ds_store file
 .DS_Store
+.config/zed/prompts/prompts-library-db.0.mdb/
+.config/karabiner/automatic_backups/
+.config/zellij/*.bak
+.config/cagent/user-uuid
+.config/cagent/.cagent_first_run
