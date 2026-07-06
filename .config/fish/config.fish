@@ -15,7 +15,6 @@ fastfetch
 # Short hand 
 alias g='git'
 alias godesk='cd Desktop'
-alias godev='cd Desktop/Developer'
 alias xxx='clear'
 alias bye='exit'
 alias v='vim'
@@ -29,3 +28,13 @@ export PATH="$HOME/.config/emacs/bin:$PATH"
 
 set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME
 set -gx PATH $HOME/.cabal/bin $PATH /Users/e-herrerabarraza/.ghcup/bin # ghcup-env
+
+# pnpm
+set -gx PNPM_HOME /Users/eduardoherrerabarraza/Library/pnpm
+if not string match -q -- "$PNPM_HOME/bin" $PATH
+    set -gx PATH "$PNPM_HOME/bin" $PATH
+end
+# pnpm end
+
+# opencode
+fish_add_path /Users/eduardoherrerabarraza/.opencode/bin
