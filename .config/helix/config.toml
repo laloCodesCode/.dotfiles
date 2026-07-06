@@ -1,3 +1,10 @@
+
+##############
+# Look       #
+##############
+
+
+
 theme = "rose_pine"
 
 
@@ -16,6 +23,7 @@ normal = "block"
 
 [editor.file-picker]
 hidden = false
+git-ignore = false
 
 [editor.lsp]
 display-inlay-hints = true
@@ -29,5 +37,44 @@ render = true
 [editor.whitespace]
 tab = "| "
 
+[editor.statusline]
+left = [
+  "mode",
+  "spacer",
+  "version-control",
+  "spacer",
+  "separator",
+  "file-name",
+  "file-modification-indicator"
+]
+right = [
+  "spinner",
+  "spacer",
+  "workspace-diagnostics",
+  "separator",
+  "spacer",
+  "diagnostics",
+  "position",
+  "file-encoding",
+  "file-line-ending",
+  "file-type"
+]
+separator = "╎"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
 
+############
+# Keymaps ##
+############
 
+[keys.normal]
+# gamming keys
+C-a = "vsplit"
+C-d = "hsplit"
+C-h = "jump_view_left"
+C-l = "jump_view_right"
+C-j = "jump_view_down"
+C-k = "jump_view_up"
+"C-," = "goto_previous_buffer"
+"C-." = "goto_next_buffer"
