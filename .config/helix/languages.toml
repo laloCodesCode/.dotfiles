@@ -43,3 +43,8 @@ language-servers = ["clangd"]
 [[langauge]]
 name = "cpp"
 language-servers = ["clangd"]
+
+# Typst
+[[language]]
+name = "typst"
+language-servers = ["tinymist"]

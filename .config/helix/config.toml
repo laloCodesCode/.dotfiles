@@ -5,7 +5,7 @@
 
 
 
-theme = "rose_pine"
+theme = "tokyonight"
 
 
 [editor]
@@ -78,9 +78,28 @@ C-j = "jump_view_down"
 C-k = "jump_view_up"
 "C-," = "goto_previous_buffer"
 "C-." = "goto_next_buffer"
+# file picker with yazi
+C-y = [
+  ':sh rm -f /tmp/unique-file',
+  ':insert-output yazi "%{buffer_name}" --chooser-file=/tmp/unique-file',
+  ':sh printf "\x1b[?1049h\x1b[?2004h" > /dev/tty',
+  ':open %sh{cat /tmp/unique-file}',
+  ':redraw',
+]
+
+
+
+
+
+
+
+
 # Quit Behavior
 [keys.normal.space.q]
 q = { q = ":wq"}
 # File Picker Behavior 
 [keys.normal.space.f]
 f = "file_picker_in_current_directory"
+
+
+
