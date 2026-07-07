@@ -1,3 +1,14 @@
+
+
+
+#  hyper key: Command-Option-Control-Shift
+
+
+
+
+
+
+
 # Reference: https://github.com/i3/i3/blob/next/etc/config
 
 config-version = 2
@@ -21,12 +32,6 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
 [mode.main.binding]
     # See: https://nikitabobko.github.io/AeroSpace/goodies#open-a-new-window-with-applescript
-    # alt-enter = '''exec-and-forget osascript -e '
-    # tell application "ghostty"
-    #     do script
-    #     activate
-    # end tell'
-    # '''
 
     # i3 wraps focus by default
     alt-j =         'focus --boundaries-action wrap-around-the-workspace left'
@@ -97,3 +102,16 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
     enter = 'mode main'
     esc = 'mode main'
+
+
+
+
+
+
+[gaps]
+inner.horizontal = 5
+inner.vertical =   5
+outer.left =       5
+outer.bottom =     5
+outer.top =        5
+outer.right =      5
