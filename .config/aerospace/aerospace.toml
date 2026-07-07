@@ -21,12 +21,12 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
 [mode.main.binding]
     # See: https://nikitabobko.github.io/AeroSpace/goodies#open-a-new-window-with-applescript
-    alt-enter = '''exec-and-forget osascript -e '
-    tell application "Terminal"
-        do script
-        activate
-    end tell'
-    '''
+    # alt-enter = '''exec-and-forget osascript -e '
+    # tell application "ghostty"
+    #     do script
+    #     activate
+    # end tell'
+    # '''
 
     # i3 wraps focus by default
     alt-j =         'focus --boundaries-action wrap-around-the-workspace left'
@@ -92,8 +92,8 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
 [mode.resize.binding]
     # Rsize that makes sense to me 
-    alt-minus = 'resize smart -50'
-    alt-equal = 'resize smart +50'
+    minus = 'resize smart -50'
+    equal = 'resize smart +50'
 
     enter = 'mode main'
     esc = 'mode main'
