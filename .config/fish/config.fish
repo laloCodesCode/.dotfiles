@@ -9,8 +9,11 @@ set -U fish_color_error red
 set -U fish_color_param yellow
 set -U fish_color_comment brblack
 
-# nerdfetch
-fastfetch
+# fastfetch
+#fastfetch
+
+# vfetch
+vfetch
 
 # Short hand 
 alias g='git'

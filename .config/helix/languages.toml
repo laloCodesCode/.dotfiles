@@ -48,3 +48,8 @@ language-servers = ["clangd"]
 [[language]]
 name = "typst"
 language-servers = ["tinymist"]
+
+# markdown
+[[language]]
+name = "markdown"
+language-servers = ["markdown-oxide"]
