@@ -6,8 +6,9 @@
 
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets. It is optional.
-;; (setq user-full-name "John Doe"
-;;       user-mail-address "john@doe.com")
+(setq user-full-name "Eduardo Herrera-Barraza"
+      user-mail-address "eduardoherrerabarra@gmail.com")
+
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
 ;;
@@ -21,8 +22,6 @@
 ;; See 'C-h v doom-font' for documentation and more examples of what they
 ;; accept. For example:
 ;;
-;;(setq doom-font (font-spec :family "Fira Code" :size 12 :weight 'semi-light)
-;;      doom-variable-pitch-font (font-spec :family "Fira Sans" :size 13))
 ;;
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
 ;; up, `M-x eval-region' to execute elisp code, and 'M-x doom/reload-font' to
@@ -38,14 +37,15 @@
 
 
 ;; I need a bigger font because I have bad eyesight
-(setq doom-font(font-spec :family "JetBrains Mono" :size 16))
+(setq doom-font(font-spec :family "JetBrains Mono" :size 18 :weight 'medium)
+      doom-variable-pitch-font (font-spec :family "JetBrains Mono" :size 18))
 
 ;; Need italic comments because my eyesight is still bad
 (custom-set-faces!
   '(font-lock-comment-face :slant italic))
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
-(setq display-line-numbers-type t)
+(setq display-line-numbers-type 'relative)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
@@ -86,13 +86,17 @@
 (setq-default vterm-shell "/opt/homebrew/bin/fish"
               explicit-shell-name "/opt/homebrew/bin/fish")
 ;; in config.el
-(use-package! typst-ts-mode
-  :defer t
-  :config
-  (after! lsp-mode
-    (add-to-list 'lsp-language-id-configuration '(typst-ts-mode . "typst"))
-    (lsp-register-client
-     (make-lsp-client :new-connection (lsp-stdio-connection "tinymist")
-                      :activation-fn (lsp-activate-on "typst")
-                      :server-id 'tinymist)))
-  :hook (typst-ts-mode . lsp-deferred))
+
+
+
+
+;; keybinds
+(map! :n "C-n" #'neotree-toggle) ;; toggle neo-tree
+(map! :leader
+      :desc "Toggle-vterm"
+      "t" #'+vterm/toggle)       ;; toggle vterm
+(map! :leader
+      :desc "Next buffer"
+      "]" #'next-buffer
+      :desc "Previous buffer"
+      "[" #'previous-buffer)     ;; tab back and fourth
