@@ -54,6 +54,5 @@
 ;; (unpin! t)
 
 
-;; Packages added by edurardo
-(package! typst-ts-mode
-  :recipe (:host github :repo "Ziqi-Yang/typst-ts-mode"))
+;; Catpuccin theme
+(package! catppuccin-theme)
