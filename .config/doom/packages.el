@@ -56,3 +56,6 @@
 
 ;; Catpuccin theme
 (package! catppuccin-theme)
+
+;; treesitter-auto
+(package! treesit-auto)

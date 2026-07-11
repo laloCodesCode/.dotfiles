@@ -55,7 +55,13 @@
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `with-eval-after-load' block, otherwise Doom's defaults may override your
 ;; settings. E.g.
-;;
+(after! treesit
+  (dolist (source '((typescript "https://github.com/tree-sitter/tree-sitter-typescript" "master" "typescript/src")
+                    (tsx        "https://github.com/tree-sitter/tree-sitter-typescript" "master" "tsx/src")))
+    (add-to-list 'treesit-language-source-alist source)))
+
+
+
 ;;   (with-eval-after-load 'PACKAGE
 ;;     (setq x y))
 ;;
@@ -87,7 +93,13 @@
               explicit-shell-name "/opt/homebrew/bin/fish")
 ;; in config.el
 
-
+;;using the treesit-auto package
+(use-package! treesit-auto
+  :custom
+  (treesit-auto-install 'prompt) ; ask before installing, use `t` to auto-install silently
+  :config
+  (treesit-auto-add-to-auto-mode-alist 'all)
+  (global-treesit-auto-mode))
 
 
 ;; keybinds
