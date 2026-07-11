@@ -37,8 +37,8 @@
 
 
 ;; I need a bigger font because I have bad eyesight
-(setq doom-font(font-spec :family "JetBrains Mono" :size 18 :weight 'medium)
-      doom-variable-pitch-font (font-spec :family "JetBrains Mono" :size 18))
+(setq doom-font(font-spec :family "BlexMono Nerd Font Mono" :size 20 :weight 'medium)
+      doom-variable-pitch-font (font-spec :family "BlexMono Nerd Font Mono" :size 20))
 
 ;; Need italic comments because my eyesight is still bad
 (custom-set-faces!
@@ -60,7 +60,30 @@
                     (tsx        "https://github.com/tree-sitter/tree-sitter-typescript" "master" "tsx/src")))
     (add-to-list 'treesit-language-source-alist source)))
 
+;; setting up typst
+(after! lsp-mode
+  (lsp-register-client
+   (make-lsp-client :new-connection (lsp-stdio-connection "tinymist")
+                    :major-modes '(typst-ts-mode)
+                    :server-id 'tinymist)))
 
+;; Configure Typst Tree-Sitter Mode
+(use-package! typst-ts-mode
+  :defer t
+  :config
+  ;; Custom keybindings matching Doom's conventions
+  (map! :map typst-ts-mode-map
+        :localleader
+        :desc "Watch mode"    "w" #'typst-ts-watch-mode
+        :desc "Preview PDF"   "p" #'typst-ts-preview))
+
+;; Configure Live Browser Preview
+(use-package! typst-preview
+  :defer t
+  :init
+  (setq typst-preview-autostart t
+        typst-preview-open-browser-automatically t
+        typst-preview-executable "tinymist"))
 
 ;;   (with-eval-after-load 'PACKAGE
 ;;     (setq x y))

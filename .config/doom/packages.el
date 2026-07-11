@@ -59,3 +59,9 @@
 
 ;; treesitter-auto
 (package! treesit-auto)
+
+;; typst setup
+(package! typst-ts-mode
+  :recipe (:host codeberg :repo "meow_king/typst-ts-mode"))      ;; the typst
+(package! typst-preview
+  :recipe (:host github :repo "havarddj/typst-preview.el"))    ;; the preview mode
