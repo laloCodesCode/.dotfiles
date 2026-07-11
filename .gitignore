@@ -15,3 +15,5 @@
 .config/zellij/*.bak
 .config/cagent/user-uuid
 .config/cagent/.cagent_first_run
+.DS_Store
+.DS_Store
