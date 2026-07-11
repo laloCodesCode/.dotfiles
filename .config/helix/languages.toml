@@ -47,6 +47,9 @@ language-servers = ["clangd"]
 # Typst
 [[language]]
 name = "typst"
+##config.preview.background.enabled = true
+##config.preview.background.args = [
+  ##"--data-plane-host=127.0.0.1:0", "--invert-colors=never", "--open"]
 language-servers = ["tinymist"]
 
 # markdown

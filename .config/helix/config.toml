@@ -86,7 +86,7 @@ C-y = [
   ':open %sh{cat /tmp/unique-file}',
   ':redraw',
 ]
-
+"C-p" = ":lsp-workspace-command tinymist.pinMain %sh{realpath %{buffer_name}}"
 
 
 
