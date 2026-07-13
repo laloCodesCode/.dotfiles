@@ -10,10 +10,10 @@ set -U fish_color_param yellow
 set -U fish_color_comment brblack
 
 # fastfetch
-#fastfetch
+fastfetch
 
 # vfetch
-vfetch
+# vfetch
 
 # Short hand 
 alias g='git'
