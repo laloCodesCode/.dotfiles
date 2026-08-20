@@ -44,34 +44,39 @@ git -C ~/dotfiles checkout .
 
 - DO NOT SUBMIT PULL REQUEST THIS IS MY PERSONAL CONFIG. FORK IT AND FIX STUFF ON YOUR LOCAL MACHINE!
 
-
 ## EMACS
 
 - Install emacs via:
 
-``` shell
+```shell
 brew tap d12frosted/emacs-plus
 brew install --cask emacs-plus-app
 ```
 
-- Doom Has a core requirnment please install ripgrep and fd via 
+- Doom Has a core requirnment please install ripgrep and fd via
 
-``` shell
+```shell
 brew install ripgrep fd
 ```
 
+- Install the doom files
 
-
-- Install the doom files 
-
-``` shell
+```shell
 git clone https://github.com/doomemacs/doomemacs ~/.config/emacs
 ~/.config/emacs/bin/doom install
 ```
 
 - Move into the dots and sync using the doom command line
-``` shell
+
+```shell
 stow .
 doom sync
 ```
 
+## BREWFILE
+
+- After you have cloned the Dotfiles on your machine run the following
+
+```
+brew bundle install
+```
