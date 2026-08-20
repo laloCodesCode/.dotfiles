@@ -1,0 +1,113 @@
+tap "carlosqsilva/brew"
+tap "d12frosted/emacs-plus", trusted: { casks: ["emacs-plus-app@master"] }
+tap "nikitabobko/tap"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
+# Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
+brew "clang-format"
+# Cross-platform make
+brew "cmake"
+# Generic library support script
+brew "libtool"
+# General-purpose scripting language
+brew "php"
+# Dependency Manager for PHP
+brew "composer"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
+# Dockerfile format and parser. a modern dockfmt
+brew "dockerfmt"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
+# User-friendly command-line shell for UNIX-like operating systems
+brew "fish"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# Go tool to modify struct field tags
+brew "gomodifytags"
+# Language server for the Go language
+brew "gopls"
+# Automatically generate Go test boilerplate from your source code
+brew "gotests"
+# Post-modern modal text editor
+brew "helix"
+# International Ispell
+brew "ispell"
+# JavaScript, CSS and HTML unobfuscator and beautifier
+brew "js-beautify"
+# Language Server for the Lua language
+brew "lua-language-server"
+# Text-to-HTML conversion tool
+brew "markdown"
+# Personal Knowledge Management System for the LSP
+brew "markdown-oxide"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# POSIX *nix fetch script using Nerdfonts
+brew "nerdfetch"
+# Fast, disk space efficient package manager
+brew "pnpm"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
+# SVG rendering tool and library
+brew "resvg"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# 7-Zip is a file archiver with a high compression ratio
+brew "sevenzip"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
+# Autoformat shell script source code
+brew "shfmt"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Organize software neatly under a single directory tree (e.g. /usr/local)
+brew "stow"
+# TOML toolkit written in Rust
+brew "taplo"
+# Services for Typst
+brew "tinymist"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Parser generator tool
+brew "tree-sitter-cli"
+# Language Server Protocol implementation for TypeScript wrapping tsserver
+brew "typescript-language-server"
+# Markup-based typesetting system
+brew "typst"
+# Blazing fast terminal file manager written in Rust, based on async I/O
+brew "yazi"
+# Pluggable terminal workspace, with terminal multiplexer as the base feature
+brew "zellij"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
+# System fetch tool for macOS written in vlang
+brew "carlosqsilva/brew/vfetch", trusted: true
+# AeroSpace is an i3-like tiling window manager for macOS
+cask "nikitabobko/tap/aerospace", trusted: true
+# GNU Emacs text editor with patches for macOS
+cask "d12frosted/emacs-plus/emacs-plus-app", trusted: true
+cask "font-blex-mono-nerd-font"
+cask "font-gohufont-nerd-font"
+cask "font-symbols-only-nerd-font"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
+# Tool that provides consistent, highly configurable symbols for apps
+cask "sf-symbols"
+# Multimedia player
+cask "vlc"
+# Rust-based terminal
+cask "warp"
+# GPU-accelerated cross-platform terminal emulator and multiplexer
+cask "wezterm"
+go "golang.org/x/tools/gopls"
+npm "corepack"
+npm "pyright"
