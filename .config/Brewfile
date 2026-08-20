@@ -111,3 +111,6 @@ cask "wezterm"
 go "golang.org/x/tools/gopls"
 npm "corepack"
 npm "pyright"
+# GUI Neovim Client
+cask "neovide"
+
