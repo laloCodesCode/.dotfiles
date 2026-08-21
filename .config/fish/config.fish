@@ -12,9 +12,6 @@ set -U fish_color_comment brblack
 # fastfetch
 fastfetch
 
-# vfetch
-# vfetch
-
 # Short hand 
 alias g='git'
 alias godesk='cd Desktop'
@@ -22,6 +19,7 @@ alias xxx='clear'
 alias bye='exit'
 alias v='vim'
 alias nv='nvim'
+alias nvide='neovide'
 alias ff='fastfetch'
 
 # Prefered prompt

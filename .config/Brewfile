@@ -113,4 +113,5 @@ npm "corepack"
 npm "pyright"
 # GUI Neovim Client
 cask "neovide"
-
+# TUI git client
+brew "lazygit"
