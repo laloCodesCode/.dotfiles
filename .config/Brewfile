@@ -115,3 +115,5 @@ npm "pyright"
 cask "neovide"
 # TUI git client
 brew "lazygit"
+# The font I saw DevsLife use 
+cask "font-plemol-jp-nf"
