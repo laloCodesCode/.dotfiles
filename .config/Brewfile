@@ -102,7 +102,7 @@ cask "font-symbols-only-nerd-font"
 cask "ghostty"
 # Tool that provides consistent, highly configurable symbols for apps
 cask "sf-symbols"
-# Multimedia player
+# Multimedia playerew
 cask "vlc"
 # Rust-based terminal
 cask "warp"
@@ -117,3 +117,6 @@ cask "neovide"
 brew "lazygit"
 # The font I saw DevsLife use 
 cask "font-plemol-jp-nf"
+# Janky Borders
+tap "FelixKratz/formulae", trusted: true
+brew "borders"

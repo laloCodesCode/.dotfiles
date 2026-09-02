@@ -8,6 +8,11 @@
 
 config-version = 2
 
+after-startup-command = [
+  'exec-and-forget borders active_color=0xffc4a7e7 inactive_color=0xff26233a width=15',
+]
+
+
 # In i3, all workspaces are phantom
 persistent-workspaces = []
 
@@ -101,9 +106,9 @@ esc = 'mode main'
 
 
 [gaps]
-inner.horizontal = 5
-inner.vertical = 5
-outer.left = 5
-outer.bottom = 5
+inner.horizontal = 8
+inner.vertical = 8
+outer.left = 8
+outer.bottom = 8
 outer.top = 5
 outer.right = 5
