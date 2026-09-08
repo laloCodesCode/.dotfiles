@@ -9,7 +9,7 @@
 config-version = 2
 
 after-startup-command = [
-  'exec-and-forget borders active_color=0xffc4a7e7 inactive_color=0xff26233a width=15',
+  'exec-and-forget borders active_color=0xffc4a7e7 inactive_color=0xff26233a width=10.5',
 ]
 
 

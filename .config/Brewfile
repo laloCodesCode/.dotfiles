@@ -120,3 +120,6 @@ cask "font-plemol-jp-nf"
 # Janky Borders
 tap "FelixKratz/formulae", trusted: true
 brew "borders"
+# Another cool font
+cask "font-fantasque-sans-mono-nerd-font"
+
