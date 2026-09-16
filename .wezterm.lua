@@ -19,7 +19,7 @@ local config = wezterm.config_builder()
 -- }
 
 config.color_scheme = "rose-pine"
-config.font = wezterm.font("Iosevka Nerd Font")
+config.font = wezterm.font("JetBrains Mono")
 config.font_size = 18.00
 
 config.enable_tab_bar = false
