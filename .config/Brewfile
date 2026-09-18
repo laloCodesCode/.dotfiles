@@ -122,4 +122,5 @@ tap "FelixKratz/formulae", trusted: true
 brew "borders"
 # Another cool font
 cask "font-fantasque-sans-mono-nerd-font"
-
+# Font Iosevbka 
+cask "font-iosevka-nerd-font"
